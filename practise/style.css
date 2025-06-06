@@ -1,0 +1,194 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+}
+.parent {
+  display: grid;
+  grid-template-areas:
+    "item item"
+    "item1 item1"
+    "item1 item1"
+    "item1 item1"
+    "item1 item1"
+    "item1 item1"
+    "item1 item1"
+    "item1 item1"
+    "item1 item1"
+    "item1 item1"
+    "item1 item1"
+    "item1 item1";
+
+  grid-gap: 1px;
+  height: 100%;
+  width: 100%;
+}
+.item {
+  grid-area: item;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  color: rgb(3, 78, 148);
+}
+.item1 {
+  grid-area: item1;
+  border-top: solid 2px rgb(0, 30, 68);
+}
+.Msub {
+  display: grid;
+  grid-template-areas: "nor nor1 nor1";
+  grid-gap: 0;
+  height: 100%;
+}
+.nor {
+  grid-area: nor;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: "Franklin";
+}
+.he {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  column-gap: 1px;
+  margin-top: -30px;
+}
+.he::before,
+.he::after {
+  content: "";
+  width: 100%;
+  height: 1.59px;
+  background-color: rgb(3, 78, 148);
+  display: inline-block;
+}
+.line {
+  font-size: 16px;
+  padding-top: -40px;
+  color: rgb(3, 78, 148);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.nor1 {
+  grid-area: nor1;
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-areas:
+    "dit dit"
+    "dit1 dit1";
+  grid-gap: 0px;
+  font-size: 80%;
+  font-family: "Roboto", sans-serif;
+}
+.dit {
+  grid-area: dit;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.dit1 {
+  grid-area: dit1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  color: rgb(8, 50, 112);
+}
+.sum {
+  margin-right: 40px;
+}
+.im {
+  margin-right: 10px;
+  padding-right: 30px;
+}
+.sub1 {
+  display: grid;
+  grid-template-areas:
+    "blkb aswm whim whiw"
+    "blkb aswm whim whiw";
+  grid-gap: 0;
+  height: 100%;
+  width: 100%;
+}
+.blkb {
+  grid-area: blkb;
+  height: 100%;
+}
+.aswm {
+  grid-area: aswm;
+}
+.whim {
+  grid-area: whim;
+}
+.whiw {
+  grid-area: whiw;
+  background-color: rgb(235, 162, 114);
+}
+.blkb1 {
+  background-image: url("blkb1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  font-size: small;
+}
+.aswm {
+  background-image: url("whim1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  font-size: small;
+}
+.whim {
+  background-image: url("whim.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-size: small;
+  font-family: "Roboto", sans-serif;
+}
+.whiw {
+  background-image: url("whiw.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  font-size: small;
+}
